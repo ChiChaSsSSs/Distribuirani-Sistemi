@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package Zad2;
+
+message Request {
+	int32 value = 1;
+}
+
+message Reply {
+	float value = 1;
+}
+
+service NumberService {
+	rpc AverageValue(Request) returns(google.protobuf.Empty);
+	rpc ComputeArray(stream Request) returns(stream Reply);
+}
+

@@ -1,0 +1,3 @@
+obj\Debug\net8.0\Protos/Number.cs \
+obj\Debug\net8.0\Protos/NumberGrpc.cs: C:/Users/aanti/.nuget/packages/grpc.tools/2.80.0/build/native/include/google/protobuf/empty.proto\
+ Protos/number.proto
