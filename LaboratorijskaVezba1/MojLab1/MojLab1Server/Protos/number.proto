@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+package MojLab;
+
+message Request {
+	int32 value = 1;
+}
+
+message Response {
+	float value = 1;
+}
+
+service NumberService {
+	rpc ComputeAverage(stream Request) returns(google.protobuf.Empty);
+	rpc ChangeArray(stream Request) returns(stream Response);
+}
